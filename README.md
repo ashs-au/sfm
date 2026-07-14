@@ -13,3 +13,4 @@ M1pro 26.2,
 Intel 10.15,
 Intel 10.14 & 
 Intel 10.13
+
