@@ -1,0 +1,24 @@
+specific to me I guess:
+heads-up:
+AIFF format files will typically work better. libsndfile has less difficulties with the headers.
+
+environment:
+to achieve a nice workflow on a Mac.
+* move the compiled sfm binary to ~/Applications. 
+- add this folder to your PATH
+
+actual usage, a couple of options: 
+
+A. simplest: if you are in a working directory for a project (in my case, ChucK) in <project root>/src-audio run sfm in-place (ie. > sfm ./snd/TV_EditsC.aif). This is the easiest where you want to gather the marker indices and also run code that references the soundfile, like ChucK's sndbuf.
+
+B. an alternative setup where source audio files live in ~/snd 
+- ie. you want to be able to simply point sfm at a soundfile and get results without needing to type a long file path
+
+Using zsh - 
+1. setup compinit (for tab-completion) and
+2. add a shell alias and/or hash (zsh specific) for this directory
+
+so for instance, I can achieve:
+> sfm ~snd/TV_EditsC.aif 
+
+
